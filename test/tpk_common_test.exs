@@ -1,8 +1,8 @@
 defmodule TpkCommonTest do
   use ExUnit.Case
-  doctest TpkCommon
+  doctest TPK.Common
 
   test "module exists" do
-    assert is_list( TpkCommon.__info__(:functions))
+    assert is_list( TPK.Common.__info__(:functions))
   end
 end
