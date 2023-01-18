@@ -7,5 +7,4 @@ defmodule TPK.Common do
   - `TPK.Common.HTML` ... deal with markdown and HTML strings.
   """
 
-    import TPK.Common.HTML
 end
