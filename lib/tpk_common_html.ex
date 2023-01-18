@@ -1,4 +1,7 @@
 defmodule TPK.Common.HTML do
+  @moduledoc """
+  HTML- and Markdown- related functions for `TPK.Common`.
+  """
   @doc ~s"""
   Convert a binary to an HTML-string. 
   nil-values are converted to an empty string.
@@ -23,6 +26,7 @@ defmodule TPK.Common.HTML do
 
   @doc ~s"""
   Read markdown from a given file and return an HTML-string. 
+  Returns any error occurring.
 
   ### Example 
 
@@ -30,7 +34,7 @@ defmodule TPK.Common.HTML do
        true
 
   """
-  def md_file_to_html!(md_or_nil \\ nil)
+  def md_file_to_html!(filename_or_nil \\ nil)
   def md_file_to_html!(nil), do: ""
 
   def md_file_to_html!(filename) do
