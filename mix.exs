@@ -48,7 +48,7 @@ defmodule TpkCommon.MixProject do
 
   defp package() do
     [
-      name: "tpk_common_library",
+      name: "tpk_common",
       files: ~w(lib .formatter.exs mix.exs README* LICENSE*),
       licenses: ["Apache-2.0"],
       links: %{
