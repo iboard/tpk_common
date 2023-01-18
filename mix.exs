@@ -18,8 +18,8 @@ defmodule TpkCommon.MixProject do
 
   defp docs() do
     [
-      main: "README",
-      extras: ["README.md", "LICENSE.md"]
+      main: "readme",
+      extras: ["README.md", "LICENSE.md","cheatsheet.cheatmd"]
     ]
   end
 

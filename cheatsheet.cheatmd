@@ -1,0 +1,50 @@
+# TPK Common Cheat Sheet
+
+## Usage
+
+### mix.exs
+
+Append the following line to your mix.deps
+
+```elixir
+  {:tpk_common, ~> "0.0"}
+```
+
+## Functions
+{: .col-2}
+
+### Earmark wrapper
+
+Interpret a string as markdown ...
+
+```elixir
+TPK.Common.md_to_html!("some **bold** text") 
+```
+
+Read markdown text from file ...
+
+```elixir
+TPK.Common.md_file_to_html!("markdown.md") 
+```
+
+### Usage
+
+Import the function to your view or liveview model with
+
+```elixir
+defmodule MyModule do 
+  import TPK.Common, only: [ md_to_html!: 1 ]
+  @md_text File.read!("markdown.md")
+  ...
+end
+```
+
+Then use the function in your heex-files like so
+```elixir
+<%= md_to_html!(@md_text) %>
+```
+
+You may read from files directely with
+```elixir
+TPK.Common.md_file_to_html("README.md")
+```
