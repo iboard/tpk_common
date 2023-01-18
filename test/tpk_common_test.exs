@@ -1,8 +1,8 @@
 defmodule TpkCommonTest do
   use ExUnit.Case
-  doctest TPK.Common
+  doctest TPK.Common.HTML
 
-  import TPK.Common, only: [md_to_html!: 1, md_file_to_html!: 1]
+  import TPK.Common.HTML, only: [md_to_html!: 1, md_file_to_html!: 1]
 
   describe "Basic string to html" do
     test "module exists" do
