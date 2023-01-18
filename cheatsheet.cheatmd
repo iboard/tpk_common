@@ -46,5 +46,5 @@ Then use the function in your heex-files like so
 
 You may read from files directely with
 ```elixir
-TPK.Common.md_file_to_html("README.md")
+TPK.Common.md_file_to_html!("README.md")
 ```
