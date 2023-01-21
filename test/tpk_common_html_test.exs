@@ -1,4 +1,4 @@
-defmodule TpkCommonTest do
+defmodule TpkCommonHTMLTest do
   use ExUnit.Case
   doctest TPK.Common.HTML
 
