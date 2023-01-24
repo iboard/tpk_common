@@ -22,13 +22,13 @@ defmodule TpkCommonHTMLTest do
     end
   end
 
-  describe "Convenience Functions" do
+  describe "HTML Convenience Functions" do
 
-    test "file to html" do
+    test "md_file_to_html!(valid_file)" do
       assert md_file_to_html!("LICENSE.md") =~ "APACHE"
     end
 
-    test "non existing file" do
+    test "md_file_to_html!(non existing file)" do
       assert md_file_to_html!("unknown.md") == "ERROR: {:error, :enoent}"
     end
     
