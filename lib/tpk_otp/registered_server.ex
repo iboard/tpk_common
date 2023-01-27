@@ -72,9 +72,10 @@ defmodule TPK.Common.OTP.RegisteredServer do
       end
 
       @doc """
-      Return the `reg_name` of this instance
+      Return the registered name for this server. 
+      Which is the argument `:reg_name` passed in `start_link/1`.
       """
-      def reg_name(name) do
+      def server_name(name) do
         GenServer.call(process_name(name), :reg_name)
       end
 
