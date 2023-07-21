@@ -55,10 +55,10 @@ defmodule TPK.Common.OTP.RegisteredServer do
       {:error, {:already_started, _pid}} = ServerTest.start_link(reg_name: "Server-2")
 
       assert ServerTest.reg_name("Server-1") == "Server-1"
-      assert ServerTest.mystate("Server-1") == :foo
+      assert ServerTest.myfunc("Server-1") == :foo
 
       assert ServerTest.reg_name("Server-2") == "Server-2"
-      assert ServerTest.mystate("Server-2") == :bar
+      assert ServerTest.myfunc("Server-2") == :bar
 
 
   """
